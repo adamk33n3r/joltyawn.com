@@ -9,7 +9,10 @@ function createImage() {
 }
 
 function spawnImage() {
-  if (mouseX != undefined || mouseY != undefined) {
+  if (
+    mouseX != undefined && mouseY != undefined &&
+    (mouseX != 0 || mouseY != 0)
+  ) {
     var img = createImage();
     img.appendTo(document.body);
 
