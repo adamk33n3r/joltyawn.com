@@ -17,8 +17,14 @@ body {
   text-align: center;
   font-size: 75pt;
   white-space: nowrap;
+  text-shadow: 0px 0px 30px yellow;
+}
+
+.title img:last-child {
+  transform: scaleX(-1);
 }
 
 .jolty-fountain {
   position: absolute;
+  z-index: -1;
 }
