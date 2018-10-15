@@ -11,6 +11,7 @@
   ],
   "scripts": {
     "start": "parcel watch --no-hmr index.html",
+    "prebuild": "rm dist/* && cp CNAME dist/",
     "build": "cross-env NODE_ENV=production parcel build index.html --public-url .",
     "deploy": "gh-pages -d dist"
   },
