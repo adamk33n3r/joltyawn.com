@@ -2,7 +2,7 @@ import { Jolty } from './jolty';
 
 let canvas: HTMLCanvasElement, ctx: CanvasRenderingContext2D;
 
-const joltyCount = 150;
+let joltyCount = 150;
 const joltyArray: Jolty[] = [];
 
 function spawnImage() {
@@ -35,6 +35,9 @@ function resizeCanvas() {
   //     (canvas.clientWidth / canvas.clientHeight);
   canvas.width = canvas.clientWidth;
   canvas.height = canvas.clientHeight;
+
+  joltyCount = Math.floor(window.innerWidth / 112);
+  joltyCount *= Math.floor(window.innerHeight / 112) + 5;
 }
 
 $(window).on('resize', resizeCanvas);

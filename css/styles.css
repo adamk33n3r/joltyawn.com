@@ -9,13 +9,10 @@ html {
 body {
   background: black;
   overflow: hidden;
-
-  display: flex;
-  justify-content: center;
 }
 
 #canvas {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -24,6 +21,7 @@ body {
 }
 
 .title {
+  width: 100%;
   color: yellow;
   text-align: center;
   font-size: 75pt;
