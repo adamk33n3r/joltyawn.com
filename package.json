@@ -1,0 +1,24 @@
+{
+  "name": "joltyawn.com",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": "git@github.com:adamk33n3r/joltyawn.com.git",
+  "author": "Adam Keenan <adam.g.keenan@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "css/",
+    "js/"
+  ],
+  "scripts": {
+    "start": "parcel watch --no-hmr index.html",
+    "build": "cross-env NODE_ENV=production parcel build index.html --public-url .",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.3.17",
+    "cross-env": "^5.2.0",
+    "gh-pages": "^2.0.1",
+    "parcel-bundler": "^1.10.3",
+    "typescript": "^3.1.3"
+  }
+}
